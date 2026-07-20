@@ -61,6 +61,15 @@ template-parts/
 - [x] Подключен `assets/js/main.js` через `wp_enqueue_script()`
 - [x] Сформирована архитектура подключения ресурсов
 
+### v0.4
+
+- [x] Создан файл `inc/theme-support.php`
+- [x] Подключен `theme-support.php` через `functions.php`
+- [x] Добавлен хук `after_setup_theme`
+- [x] Добавлена поддержка миниатюр записей `post-thumbnails`
+- [x] Добавлена поддержка автоматического управления title через `title-tag`
+- [x] Добавлена поддержка HTML5-разметки темы
+
 ---
 
 ## Автор
