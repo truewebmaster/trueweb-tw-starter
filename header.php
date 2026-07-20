@@ -12,16 +12,28 @@
 
 <?php wp_body_open(); ?>
 
-<header>
+<header class="header">
+
+    <div class="header__logo">
+        <?php
+        if (has_custom_logo()) {
+            the_custom_logo();
+        } else {
+            bloginfo('name');
+        }
+        ?>
+    </div>
 
     <?php
-    wp_nav_menu(
-        [
-            'theme_location' => 'primary',
-            'container' => 'nav',
-            'container_class' => 'header__menu',
-        ]
-    );
+    if (has_nav_menu('primary')) {
+        wp_nav_menu(
+            [
+                'theme_location' => 'primary',
+                'container' => 'nav',
+                'container_class' => 'header__menu',
+            ]
+        );
+    }
     ?>
 
 </header>
