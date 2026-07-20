@@ -2,7 +2,11 @@
 
 <main>
 
-    <h1>TW Starter</h1>
+    <?php
+    get_template_part(
+        'template-parts/sections/hero'
+    );
+    ?>
 
 </main>
 
