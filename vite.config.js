@@ -2,6 +2,16 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@scss": resolve(__dirname, "assets/scss"),
+      "@js": resolve(__dirname, "assets/js"),
+      "@img": resolve(__dirname, "assets/images"),
+      "@icons": resolve(__dirname, "assets/icons"),
+      "@fonts": resolve(__dirname, "assets/fonts"),
+    },
+  },
+
   build: {
     outDir: "build",
 
