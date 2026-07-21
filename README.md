@@ -10,25 +10,51 @@
 
 ---
 
-## Технологии
+## Стек
 
 - WordPress
-- PHP
-- SCSS
-- JavaScript
-- Git
-- LocalWP
-- SFTP
-- VS Code
+- Vite
+- SCSS (Sass Modules)
+- Vanilla JavaScript (ES Modules)
+- PHP 8+
 
----
-
-## Структура проекта
+## Структура
 
 ```
 assets/
+├── fonts/
+├── icons/
+├── images/
+├── js/
+├── scss/
+└── css/
+
+build/
+├── css/
+└── js/
+
 inc/
 template-parts/
+```
+
+## Установка
+
+Установить зависимости:
+
+```bash
+npm install
+```
+
+Запустить режим разработки:
+
+```bash
+npm run dev
+```
+
+Собрать production-версию:
+
+```bash
+npm run build
 ```
 
 ---
@@ -174,6 +200,29 @@ template-parts/
 
 - [x] Создан загрузчик init.php
 - [x] в functions.php всё подключается через init.php
+- [x] Настроены alias в `vite.config.js`
+- [x] Добавлены пути:
+  - `@scss`
+  - `@js`
+  - `@img`
+  - `@icons`
+  - `@fonts`
+- [x] Проверена отдельная сборка SCSS и JS
+- [x] Исправлена структура подключения стилей
+- [x] JS и CSS собираются в отдельные файлы build
+
+### v1.4.0
+
+- Настроен Vite.
+- Настроена сборка SCSS и JavaScript.
+- Создана базовая архитектура проекта.
+- Подготовлена SCSS-библиотека:
+  - Helpers
+  - Variables
+  - Normalize
+  - Globals
+  - Utils
+- Подготовлена структура JavaScript.
 
 ---
 

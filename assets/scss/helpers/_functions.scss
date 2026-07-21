@@ -1,0 +1,16 @@
+@use "sass:math";
+@use "constants" as *;
+
+// ========================================
+// Fluid value
+// ========================================
+
+@function fluid($max: 100, $min: 10) {
+  $min-viewport: $viewport-mobile-width;
+  $max-viewport: $container-desktop-width;
+
+  $slope: math.div($max - $min, $max-viewport - $min-viewport);
+  $intercept: $min - ($min-viewport * $slope);
+
+  @return clamp(#{$min}px, #{$intercept}px + #{$slope * 100}vw, #{$max}px);
+}

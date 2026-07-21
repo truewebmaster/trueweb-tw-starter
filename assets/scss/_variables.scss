@@ -1,0 +1,48 @@
+@use "helpers" as *;
+
+:root {
+  // ========================================
+  // Colors
+  // ========================================
+
+  --с-white: #ffffff;
+  --с-black: #000000;
+
+  --с-accent: #ff6363;
+  --с-green: green;
+
+  // ========================================
+  // Typography
+  // ========================================
+
+  --font-family-base: "Inter";
+
+  // ========================================
+  // Layout
+  // ========================================
+
+  --container-width: #{$container-desktop-width}px;
+  --container-padding-x: 16px;
+
+  --section-padding-y: 80px;
+
+  @include tablet {
+    --section-padding-y: 60px;
+  }
+
+  @include mobile {
+    --section-padding-y: 40px;
+  }
+
+  // ========================================
+  // Animation
+  // ========================================
+
+  --transition-duration: 0.2s;
+
+  // ========================================
+  // Layers
+  // ========================================
+
+  --layer-mobile-menu: 100;
+}

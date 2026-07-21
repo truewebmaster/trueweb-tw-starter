@@ -1,0 +1,11 @@
+@use "../helpers" as *;
+
+.button {
+  color: white;
+  background: var(--с-accent);
+  padding: 24px;
+
+  @include tablet {
+    background: var(--с-green);
+  }
+}

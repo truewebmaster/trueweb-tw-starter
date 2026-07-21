@@ -1,6 +1,7 @@
 {
   "name": "tw-starter",
   "version": "1.0.0",
+  "type": "module",
   "description": "WordPress Starter Theme by TrueWeb",
   "author": "truewebmaster",
   "license": "MIT",
@@ -10,6 +11,8 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "postcss-preset-env": "^11.3.2",
+    "postcss-pxtorem": "^6.1.0",
     "sass": "^1.101.3",
     "vite": "^8.1.5"
   }
