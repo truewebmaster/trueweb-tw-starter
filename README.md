@@ -148,6 +148,18 @@ template-parts/
 - [x] Проверена сборка SCSS через Vite
 - [x] Проверено подключение собранного CSS через WordPress
 
+### v1.2
+
+- [x] Настроена сборка JavaScript через Vite
+- [x] Создана структура JS:
+  - components
+  - modules
+  - utils
+- [x] Настроена сборка JS в build/js/main.js
+- [x] Настроена сборка CSS в build/css/main.css
+- [x] Настроены отдельные точки входа JS и SCSS
+- [x] Проверена работа сборки через npm run build
+
 ---
 
 ## Автор

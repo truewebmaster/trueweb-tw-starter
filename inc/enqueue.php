@@ -22,7 +22,7 @@ function tw_enqueue_scripts(): void
 {
 	    wp_enqueue_script(
         'tw-main',
-        get_template_directory_uri() . '/assets/js/main.js',
+        get_template_directory_uri() . '/build/js/main.js',
         [],
         wp_get_theme()->get('Version'),
         true

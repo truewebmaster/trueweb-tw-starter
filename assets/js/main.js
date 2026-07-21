@@ -1,1 +1,1 @@
-console.log("TW Starter");
+console.log("TW Starter JS works");
