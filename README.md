@@ -123,6 +123,31 @@ template-parts/
 - [x] Папка `img` переименована в `images`
 - [x] Подготовлена структура проекта для интеграции Vite
 
+### v1.0
+
+- [x] Создан `package.json`
+- [x] Изучено назначение `package.json`
+- [x] Установлен Node.js (используется существующая установка)
+- [x] Установлен Vite
+- [x] Настроен `package.json`
+- [x] Добавлены npm scripts:
+  - `npm run dev`
+  - `npm run build`
+- [x] Настроен `.gitignore` для работы с Node.js
+- [x] Изучена структура npm-проекта
+- [x] Определены правила работы с зависимостями (`dependencies` / `devDependencies`)
+
+### v1.1
+
+- [x] Установлен Sass
+- [x] Создан `vite.config.js`
+- [x] Настроена работа Vite внутри WordPress темы
+- [x] Настроена точка входа `assets/scss/main.scss`
+- [x] Настроена папка сборки `build`
+- [x] Настроена генерация CSS в `build/css/main.css`
+- [x] Проверена сборка SCSS через Vite
+- [x] Проверено подключение собранного CSS через WordPress
+
 ---
 
 ## Автор

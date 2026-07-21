@@ -9,7 +9,7 @@ function tw_enqueue_styles(): void
 {
     wp_enqueue_style(
         'tw-main',
-        get_template_directory_uri() . '/assets/css/main.css',
+        get_template_directory_uri() . '/build/css/main.css',
         [],
         wp_get_theme()->get('Version')
     );
