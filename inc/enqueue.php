@@ -11,7 +11,7 @@ function tw_enqueue_styles(): void
         'tw-main',
         get_template_directory_uri() . '/build/css/main.css',
         [],
-        wp_get_theme()->get('Version')
+        TW_THEME_VERSION
     );
 }
 
@@ -24,7 +24,7 @@ function tw_enqueue_scripts(): void
         'tw-main',
         get_template_directory_uri() . '/build/js/main.js',
         [],
-        wp_get_theme()->get('Version'),
+        TW_THEME_VERSION,
         true
     );
 }
