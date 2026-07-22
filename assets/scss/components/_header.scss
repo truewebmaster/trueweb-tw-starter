@@ -1,0 +1,160 @@
+@use "../helpers" as *;
+
+.header {
+  --headerPaddingBlock: 20px;
+
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 100px 200px;
+
+  @keyframes scrolling-header {
+    to {
+      box-shadow: 0 0 1rem 0 var(--c-gray);
+      --headerPaddingBlock: 10px;
+    }
+  }
+
+  &__body {
+    padding-block: var(--headerPaddingBlock);
+    background-color: var(--c-white);
+    transition-duration: var(--transition-duration);
+
+    @include mobile {
+      --headerPaddingBlock: 10px;
+    }
+
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1rem;
+    }
+  }
+
+  &__overlay {
+    @include tablet-above {
+      display: contents;
+    }
+
+    @include tablet {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 3rem;
+      padding: 1rem;
+      background-color: var(--c-white);
+      transition-duration: var(--transition-duration);
+
+      &:not(.is-active) {
+        @include hide;
+
+        translate: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    @include tablet {
+      overflow-y: auto;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 2px;
+
+      @include tablet {
+        flex-direction: column;
+        row-gap: 10px;
+      }
+    }
+
+    &-link {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--c-gray);
+      text-transform: uppercase;
+
+      @include laptop {
+        padding: 8px 12px;
+      }
+
+      &.is-active {
+        color: var(--c-gray);
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      align-self: center;
+    }
+
+    &-info {
+      text-align: right;
+
+      @include tablet {
+        display: none;
+      }
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-phone {
+      color: var(--c-gray);
+      font-size: fluid-to-laptop(16, 14);
+      font-weight: 700;
+    }
+
+    &-time-work {
+      color: var(--c-gray);
+      font-size: 12px;
+    }
+  }
+
+  &__contact-us-link {
+    font-size: 14px;
+    padding: fluid-to-laptop(8, 6) fluid-to-laptop(8, 16);
+
+    @include tablet {
+      padding: 12px 20px;
+      max-width: 220px;
+      align-self: center;
+    }
+  }
+
+  &__mob-action {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__action-phone--logo {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    @include mobile-s {
+      display: none;
+    }
+  }
+}
