@@ -57,6 +57,30 @@ npm run dev
 npm run build
 ```
 
+Перед загрузкой сайта на сервер необходимо собрать проект.
+
+Разработка
+│
+├── npm run dev
+│
+├── Vite запускает сервер :5173
+│
+└── WordPress подключает:
+├── @vite/client
+└── assets/js/main.js
+
+Production
+│
+├── npm run build
+│
+├── Vite создаёт:
+│
+└── build/
+├── css/main.css
+└── js/main.js
+
+WordPress подключает готовые файлы
+
 ---
 
 ## Roadmap
@@ -215,6 +239,8 @@ npm run build
 
 - Настроен Vite.
 - Настроена сборка SCSS и JavaScript.
+- Настроен автоматический режим разработки и production-сборки.
+- Добавлено автоматическое переключение между Vite dev-сервером и готовыми файлами сборки WordPress.
 - Создана базовая архитектура проекта.
 - Подготовлена SCSS-библиотека:
   - Helpers
@@ -222,7 +248,13 @@ npm run build
   - Normalize
   - Globals
   - Utils
+- Настроены базовые SCSS-инструменты:
+  - Functions
+  - Mixins
+  - Media queries
+  - Fluid typography
 - Подготовлена структура JavaScript.
+- Настроена интеграция WordPress и Vite.
 
 ---
 

@@ -2,6 +2,14 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
+  server: {
+    host: true, // Доступен из LocalWP / Docker / WSL
+    port: 5173,
+    strictPort: true,
+
+    cors: true,
+  },
+
   resolve: {
     alias: {
       "@scss": resolve(__dirname, "assets/scss"),
