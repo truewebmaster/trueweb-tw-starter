@@ -3,9 +3,9 @@
 defined('ABSPATH') || exit;
 
 
-function tw_vite_client(): void
+function wpstarter_vite_client(): void
 {
-    if (!tw_is_vite_running()) {
+    if (!wpstarter_is_vite_running()) {
         return;
     }
 
@@ -18,4 +18,4 @@ function tw_vite_client(): void
     <?php
 }
 
-add_action('wp_head', 'tw_vite_client', 1);
+add_action('wp_head', 'wpstarter_vite_client', 1);

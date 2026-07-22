@@ -3,6 +3,6 @@
 defined('ABSPATH') || exit;
 
 define(
-    'TW_THEME_VERSION',
-    '1.3.0'
+    'WP_STARTER_VERSION',
+    '1.4.0'
 );

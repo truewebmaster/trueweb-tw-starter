@@ -3,31 +3,31 @@
 defined('ABSPATH') || exit;
 
 
-function tw_enqueue_assets(): void
+function wp_enqueue_assets(): void
 {
 
-    if (tw_is_vite_running()) {
+    if (wpstarter_is_vite_running()) {
         return;
     }
 
     // Подключаем главный CSS файл
     wp_enqueue_style(
-        'tw-main',
+        'wp-main',
         get_template_directory_uri() . '/build/css/main.css',
         [],
-        TW_THEME_VERSION
+        WP_STARTER_VERSION
     );
 
     // Подключаем главный JS файл
     wp_enqueue_script(
-        'tw-main',
+        'wp-main',
         get_template_directory_uri() . '/build/js/main.js',
         [],
-        TW_THEME_VERSION,
+        WP_STARTER_VERSION,
         true
     ); }
 
 add_action(
     'wp_enqueue_scripts',
-    'tw_enqueue_assets'
+    'wp_enqueue_assets'
 );

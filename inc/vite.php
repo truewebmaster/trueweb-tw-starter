@@ -3,7 +3,7 @@
 defined('ABSPATH') || exit;
 
 
-function tw_is_vite_running(): bool
+function wpstarter_is_vite_running(): bool
 {
     $connection = @fsockopen(
         '127.0.0.1',
