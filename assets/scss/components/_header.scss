@@ -67,11 +67,16 @@
     &-list {
       display: flex;
       align-items: center;
-      column-gap: 2px;
+      column-gap: 5px;
 
       @include tablet {
         flex-direction: column;
         row-gap: 10px;
+      }
+
+      a {
+        padding: 10px 20px;
+        color: var(--c-dark);
       }
     }
 
@@ -96,7 +101,7 @@
   &__action {
     display: flex;
     align-items: center;
-    column-gap: 9px;
+    column-gap: 20px;
 
     @include tablet {
       display: flex;
@@ -119,7 +124,7 @@
     }
 
     &-phone {
-      color: var(--c-gray);
+      color: var(--c-dark);
       font-size: fluid-to-laptop(16, 14);
       font-weight: 700;
     }
@@ -130,31 +135,8 @@
     }
   }
 
-  &__contact-us-link {
-    font-size: 14px;
-    padding: fluid-to-laptop(8, 6) fluid-to-laptop(8, 16);
-
-    @include tablet {
-      padding: 12px 20px;
-      max-width: 220px;
-      align-self: center;
-    }
-  }
-
   &__mob-action {
     display: flex;
     column-gap: 20px;
-  }
-
-  &__action-phone--logo {
-    display: none;
-
-    @include tablet {
-      display: block;
-    }
-
-    @include mobile-s {
-      display: none;
-    }
   }
 }

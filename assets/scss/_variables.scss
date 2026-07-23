@@ -5,18 +5,24 @@
   // Colors
   // ========================================
 
-  --с-white: #ffffff;
-  --c-gray: #cecece;
-  --с-black: #000000;
+  --c-white: #ffffff;
+  --c-gray: #a1a1a1;
+  --c-black: #000000;
+  --c-dark: #2e2c2c;
 
-  --с-accent: #ff6363;
-  --с-green: green;
-  --с-blue: blue;
+  --c-accent: #e75541;
+  --c-green: green;
+  --c-blue: blue;
+
+  // ========================================
+  // Elements
+  // ========================================
+
+  --border: 1px solid var(--c-accent);
 
   // ========================================
   // Typography
   // ========================================
-
   --font-family-base: "Inter";
 
   // ========================================

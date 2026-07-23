@@ -12,11 +12,10 @@
   font-size: fluid(18, 16);
   font-weight: 500;
   padding: fluid(14, 12) fluid(32, 28);
-  color: var(--c-gray);
-  background-color: var(--с-green);
+  color: var(--c-accent);
+  background-color: var(--c-white);
   white-space: nowrap;
-  // border: var(--border);
-  // border-radius: var(--border-radius-x);
+  border: var(--border);
   cursor: pointer;
 
   @include mobile-s {
@@ -24,169 +23,8 @@
   }
 
   @include hover {
-    color: var(--с-accent);
-    background-color: var(--c-gray);
-
-    .button__icon--white {
-      color: var(--c-gray);
-    }
+    color: var(--c-white);
+    background-color: var(--c-accent);
+    border-color: var(--c-accent);
   }
-
-  // &__icon {
-  //   @include square(var(--sizeIcon));
-  //   color: var(--c-gray);
-  //   transition-duration: var(--transition-duration);
-
-  //   &--accent {
-  //     color: var(--с-accent);
-  //   }
-
-  //   &--white {
-  //     color: var(--c-gray);
-  //   }
-  // }
-
-  // &--banner {
-  //   font-size: 16px;
-  //   font-weight: 500;
-  //   padding: fluid-to-laptop(10, 8) fluid-to-laptop(30, 26);
-  // }
-
-  // &--accent {
-  //   color: var(--c-white);
-  //   background-color: var(--с-accent);
-  //   border-color: var(--с-accent);
-
-  //   @include hover {
-  //     color: var(--c-white);
-  //     background-color: var(--с-accent);
-  //   }
-  // }
-
-  // &--orange {
-  //   color: var(--c-white);
-  //   background-color: var(--с-accent);
-  //   border-color: var(--с-accent);
-
-  //   @include hover {
-  //     color: var(--c-white);
-  //     background-color: var(--с-accent);
-  //     border-color: var(--с-accent);
-  //   }
-  // }
-
-  // &--border-none {
-  //   --sizeIcon: 10px;
-  //   border: none;
-  //   padding-left: 0;
-  //   background-color: transparent;
-
-  //   .button__icon {
-  //     color: var(--с-accent);
-  //     margin-top: 3px;
-  //   }
-  // }
-
-  // &--opacity-white {
-  //   color: var(--c-white);
-  //   font-size: 14px;
-  //   font-weight: 400;
-  //   background-color: rgba(225, 225, 225, 0.1);
-  //   border-color: rgba(225, 225, 225, 0.1);
-
-  //   @include hover {
-  //     color: var(--c-white);
-  //     background-color: rgba(225, 225, 225, 0.2);
-  //   }
-  // }
-
-  // &--white {
-  //   color: var(--c-gray);
-  //   background-color: var(--c-white);
-  //   border-color: var(--c-white);
-  //   font-size: 14px;
-
-  //   @include hover {
-  //     color: var(--c-gray);
-  //     background-color: var(--c-gray);
-  //   }
-  // }
-
-  // &--gray {
-  //   color: var(--c-white);
-  //   background-color: var(--c-gray);
-  //   @include hover {
-  //     color: var(--c-white);
-  //     background-color: var(--c-gray);
-  //   }
-  // }
-
-  // &--gray-lite {
-  //   @include square(fluid-to-laptop(40, 36));
-  //   color: var(--с-green);
-  //   min-width: unset;
-  //   border: none;
-  //   padding: 4px 16px;
-  //   background-color: var(--c-gray);
-  //   line-height: 1.3;
-  //   @include hover {
-  //     color: var(--с-green);
-  //     background-color: var(--c-gray);
-  //   }
-  // }
-
-  // &--product-card {
-  //   display: flex;
-  //   align-items: center;
-  //   column-gap: 5px;
-  //   font-size: 14px;
-  //   padding: fluid-to-laptop(10, 8) fluid-to-laptop(30, 26);
-  //   @include hover {
-  //     background-color: var(--с-accent);
-  //     border-color: var(--с-accent);
-  //     color: var(--c-white);
-  //   }
-  // }
-
-  // &--single-card {
-  //   flex-direction: row-reverse;
-  //   max-width: 250px;
-  //   width: 100%;
-  //   background-color: var(--с-accent);
-  //   border-color: var(--с-accent);
-  //   color: var(--c-white);
-
-  //   @include mobile-s {
-  //     max-width: unset;
-  //   }
-  //   @include hover {
-  //     color: var(--c-white);
-  //     background-color: var(--с-accent);
-  //     border-color: var(--с-accent);
-  //   }
-  // }
-
-  // &--phone {
-  //   @include square(40px);
-  //   @include flex-center;
-
-  //   display: none;
-  //   min-width: unset;
-  //   border-radius: 50%;
-  //   padding: 5px !important;
-
-  //   @include mobile-s {
-  //     display: flex;
-  //   }
-
-  //   & img {
-  //     @include square(20px);
-  //   }
-
-  //   @include hover {
-  //     background-color: var(--с-accent);
-  //     border-color: var(--с-accent);
-  //     scale: 1.1;
-  //   }
-  // }
 }

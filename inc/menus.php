@@ -9,7 +9,7 @@ function tw_register_menus(): void
 {
     register_nav_menus(
         [
-            'primary' => 'Главное меню',
+            'primary' => 'header-menu',
         ]
     );
 }

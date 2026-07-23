@@ -20,16 +20,17 @@
             <nav class="header__menu">
 							<?php
 								wp_nav_menu([
-    							'theme_location' => 'main',
+    							'theme_location' => 'primary',
     							'container' => false,
     							'menu_class' => 'header__menu-list',
+                  'fallback_cb' => false,
 								]);
 								?>
 						</nav>
             <div class="header__action">
               <div class="header__action-info">
-                <a class="header__action-phone" href="tel:+79255638484"
-                  >+7 (925) 563-84-84</a
+                <a class="header__action-phone" href="tel:+79999999999"
+                  >+7 (999) 999-99-99</a
                 >
                 <div class="header__action-time-work">
                   Ежедневно 9:00 - 20:00
@@ -46,12 +47,7 @@
           </div>
 
           <div class="header__mob-action visible-tablet">
-            <!-- <a
-              href="tel:+79255638484"
-              class="header__contact-us-link button"
-              ><img src="./icons/phone.svg" alt="Позвонить"
-            /></a> -->
-            
+           
 					<? get_template_part('template-parts/components/burger-button'); ?>
 
           </div>
