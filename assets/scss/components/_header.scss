@@ -18,7 +18,7 @@
     }
   }
 
-  &__body {
+  &__wrapper {
     padding-block: var(--headerPaddingBlock);
     background-color: var(--c-white);
     transition-duration: var(--transition-duration);
@@ -26,13 +26,13 @@
     @include mobile {
       --headerPaddingBlock: 10px;
     }
+  }
 
-    &-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      column-gap: 1rem;
-    }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
   }
 
   &__overlay {
@@ -76,24 +76,19 @@
 
       a {
         padding: 10px 20px;
+        text-transform: uppercase;
         color: var(--c-dark);
-      }
-    }
+        font-size: 14px;
+        font-weight: 500;
 
-    &-link {
-      padding: 10px 20px;
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--c-gray);
-      text-transform: uppercase;
+        @include laptop {
+          padding: 8px 12px;
+        }
 
-      @include laptop {
-        padding: 8px 12px;
-      }
-
-      &.is-active {
-        color: var(--c-gray);
-        pointer-events: none;
+        &.is-active {
+          color: var(--c-gray);
+          pointer-events: none;
+        }
       }
     }
   }
